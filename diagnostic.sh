@@ -17,7 +17,9 @@ tail -n $(($(tac ~/printer_data/logs/crowsnest.log | grep -m 1 -n 'crowsnest: cr
 
 logdate=$(date +%Y%m%d-%H%M)
 zip ~/printer_data/config/backup/diagnostic-"$logdate".zip ~/printer_data/config/backup/*.log
-zip ~/printer_data/config/backup/diagnostic-"$logdate".zip /etc/network/interfaces.d/can0
+if [ -f /etc/network/interfaces.d/can0 ]; then
+    zip ~/printer_data/config/backup/diagnostic-"$logdate".zip /etc/network/interfaces.d/can0
+fi
 zip ~/printer_data/config/backup/diagnostic-"$logdate".zip ~/printer_data/config/*.conf
 
 
