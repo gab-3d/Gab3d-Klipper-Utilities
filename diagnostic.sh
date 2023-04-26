@@ -16,7 +16,7 @@ tail -n $(($(tac ~/printer_data/logs/crowsnest.log | grep -m 1 -n 'crowsnest: cr
 
 
 logdate=$(date +%Y%m%d-%H%M)
-zip diagnostic-"$logdate".zip ~/printer_data/config/backup/*.log
+zip ~/printer_data/config/backup/diagnostic-"$logdate".zip ~/printer_data/config/backup/*.log
 
 #delete *.log in ~/printer_data/config/backup/
 rm ~/printer_data/config/backup/*.log
