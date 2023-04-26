@@ -31,6 +31,10 @@ Thanks to [Insane](https://github.com/insane78/) for developing these scripts
 ## PID helper
 - PID_HOTEND
 - PID_BED
+## Generate diagnostic files
+
+Generate a collection of log files usefull to debug
+the macro is DIAG_CREATE 
 
 ## Hidden macro _UPDATE_GAB_UTIL
 The macro _UPDATE_GAB_UTIL run the installation script again
