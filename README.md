@@ -16,6 +16,7 @@ bash ~/Gab3d-Klipper-Utilities/install.sh
 It does a backup of
 - ~/printer_data/config
 - /etc/network/interfaces.d/can0
+- ~/printer_data/moonraker.asvc
 
 it save output under backup folder in config with hostname and the date
 
@@ -26,6 +27,9 @@ Thanks to [Insane](https://github.com/insane78/) for developing these scripts
 - GRAPH_SHAPER_X
 - GRAPH_SHAPER_Y
 
+## PID helper
+- PID_HOTEND
+- PID_BED
 
 ## Hidden macro _UPDATE_GAB_UTIL
 The macro _UPDATE_GAB_UTIL run the installation script again
