@@ -16,7 +16,7 @@ fi
 #create a variable backupdate with a string rapresenting the current date and time in minutes separated by minus
 backupdate=$(date +%Y%m%d-%H%M)
 #zip ~/printer_data/config directory to a file named hostname-date.zip and exclude .git directory
-zip -r ~/printer_data/config/backup/$(hostname)-$backupdate.zip ~/printer_data/config -x *.zip 
+zip -r ~/printer_data/config/backup/$(hostname)-$backupdate.zip ~/printer_data/config -x "**/backup/**" "**/.git/**" 
 
 #check if /etc/network/interfaces.d/can0 exists if yes add it to the backup
 if [ -f /etc/network/interfaces.d/can0 ]; then
