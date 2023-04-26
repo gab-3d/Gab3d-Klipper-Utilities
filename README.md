@@ -1,7 +1,13 @@
 # Gab3d Klipper Utilities
  
 To install it open a shell prompt (ssh or putty)
-run these 3 lines
+
+Use Kiauh to install shell command
+
+- option 4 (Advanced)
+- option 8 (G-Code Shell Command)
+
+than run these 3 lines
 
 ```shell
 cd ~
