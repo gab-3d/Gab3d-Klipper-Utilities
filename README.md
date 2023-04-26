@@ -14,11 +14,12 @@ bash ~/Gab3d-Klipper-Utilities/install.sh
 ## Backup klipper
 
 It does a backup of
-- ~/printer_data/config
+- ~/printer_data/config -- Excluding zip archives
 - /etc/network/interfaces.d/can0
 - ~/printer_data/moonraker.asvc
 
-it save output under backup folder in config with hostname and the date
+it save output under backup folder in config with hostname and the date in a zip file
+I choose this directory because is simple to delete files and download 
 
 ## Generate png of input shaper results and install all requirements
 Thanks to [Insane](https://github.com/insane78/) for developing these scripts
