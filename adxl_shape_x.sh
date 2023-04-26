@@ -6,4 +6,4 @@ if [ ! -d ~/printer_data/config/shaper/ ]; then
   mkdir ~/printer_data/config/shaper/
 fi
 rundate=$(date +%Y%m%d-%H%M)
-~/klipper/scripts/calibrate_shaper.py /tmp/calibration_data_x_*.csv -o ~/printer_data/config/shaper/$(rundate)_X.png
+~/klipper/scripts/calibrate_shaper.py /tmp/calibration_data_x_*.csv -o ~/printer_data/config/shaper/"$rundate"_X.png
