@@ -28,7 +28,9 @@ fi
 untracked=$(git -C ~/klipper/klippy/extras ls-files --others --exclude-standard)
 if [ -n "$untracked" ]; then
   echo "untracked files found in ~/klipper/klippy/extras, adding them to the backup"
+  cd ~/klipper/klippy/extras
   zip -r ~/printer_data/config/backup/$(hostname)-$backupdate.zip $untracked
+  cd ~
 fi
 
 
