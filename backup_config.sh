@@ -24,5 +24,13 @@ if [ -f /etc/network/interfaces.d/can0 ]; then
   zip -r ~/printer_data/config/backup/$(hostname)-$backupdate.zip /etc/network/interfaces.d/can0
 fi
 
+#list untracked git files in ~/klipper/klippy/extras and add them to the backup
+untracked=$(git -C ~/klipper/klippy/extras ls-files --others --exclude-standard)
+if [ -n "$untracked" ]; then
+  echo "untracked files found in ~/klipper/klippy/extras, adding them to the backup"
+  zip -r ~/printer_data/config/backup/$(hostname)-$backupdate.zip $untracked
+fi
+
+
 zip -r ~/printer_data/config/backup/$(hostname)-$backupdate.zip ~/printer_data/moonraker.asvc
 

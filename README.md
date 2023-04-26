@@ -23,6 +23,7 @@ It does a backup of
 - ~/printer_data/config -- Excluding zip archives
 - /etc/network/interfaces.d/can0
 - ~/printer_data/moonraker.asvc
+- files added to ~/klipper/klippy/extras
 
 it save output under backup folder in config with hostname and the date in a zip file
 I choose this directory because is simple to delete files and download 
