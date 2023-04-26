@@ -1,7 +1,13 @@
 # Gab3d Klipper Utilities
  
 To install it open a shell prompt (ssh or putty)
-run these 3 lines
+
+Use Kiauh to install shell command
+
+- option 4 (Advanced)
+- option 8 (G-Code Shell Command)
+
+than run these 3 lines
 
 ```shell
 cd ~
@@ -31,6 +37,10 @@ Thanks to [Insane](https://github.com/insane78/) for developing these scripts
 ## PID helper
 - PID_HOTEND
 - PID_BED
+## Generate diagnostic files
+
+Generate a collection of log files usefull to debug
+the macro is DIAG_CREATE 
 
 ## Hidden macro _UPDATE_GAB_UTIL
 The macro _UPDATE_GAB_UTIL run the installation script again
