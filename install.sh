@@ -48,14 +48,14 @@ install_script: install.sh
     " >> /home/pi/printer_data/config/moonraker.conf
 fi
 
-#check if the string 'gab-3d-utilities.cfg' exists in the file /home/pi/printer_data/moonraker.asvc if not append it
-if grep -q 'gab-3d-utilities.cfg' /home/pi/printer_data/moonraker.asvc; then
-  echo "gab-3d-utilities.cfg already exists in /home/pi/printer_data/moonraker.asvc"
+#check if the string 'Gab3d-Klipper-Utilities' exists in the file /home/pi/printer_data/moonraker.asvc if not append it
+if grep -q 'Gab3d-Klipper-Utilities' /home/pi/printer_data/moonraker.asvc; then
+  echo "Gab3d-Klipper-Utilities already exists in /home/pi/printer_data/moonraker.asvc"
 else
-  #append the string 'gab-3d-utilities.cfg' to the file /home/pi/printer_data/moonraker.asvc
-    echo "gab-3d-utilities.cfg does not exist in /home/pi/printer_data/moonraker.asvc, adding it now"
-    echo  "gab-3d-utilities.cfg" >> /home/pi/printer_data/moonraker.asvc
+  echo "Gab3d-Klipper-Utilities does not exist in /home/pi/printer_data/moonraker.asvc, adding it now"
+  echo "Gab3d-Klipper-Utilities" >> /home/pi/printer_data/moonraker.asvc
 fi
+
 
 #restart klipper
 service klipper restart
