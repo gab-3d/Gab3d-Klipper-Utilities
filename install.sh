@@ -21,6 +21,8 @@ fi
 
 #restart klipper
 sudo service klipper restart
+#restart moonraker
+sudo service moonraker restart 
 
 
   

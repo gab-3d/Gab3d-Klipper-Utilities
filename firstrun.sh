@@ -23,6 +23,7 @@ else
 [update_manager Gab3d-Klipper-Utilities]
 type: git_repo
 channel: dev
+primary_branch: main
 path: ~/Gab3d-Klipper-Utilities
 origin: https://github.com/gab-3d/Gab3d-Klipper-Utilities.git
 install_script: install.sh
