@@ -15,8 +15,9 @@ if grep -q '\[include gab-3d-utilities.cfg\]' /home/pi/printer_data/config/print
   echo "'[include gab-3d-utilities.cfg]' already exists in /home/pi/printer_data/config/printer.cfg"
 else
   echo "'[include gab-3d-utilities.cfg]' does not exist in /home/pi/printer_data/config/printer.cfg, adding it now"
-  sed -i '1s/^/[include gab-3d-utilities.cfg]'$'\n/' /home/pi/printer_data/config/printer.cfg
+  sed -i '1s/^/[include gab-3d-utilities.cfg]\n/' /home/pi/printer_data/config/printer.cfg
 fi
+
 
 #restart klipper
 sudo service klipper restart
