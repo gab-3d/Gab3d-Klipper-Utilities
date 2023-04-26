@@ -53,7 +53,7 @@ if grep -q 'Gab3d-Klipper-Utilities' ~/printer_data/moonraker.asvc; then
   echo "Gab3d-Klipper-Utilities already exists in ~/printer_data/moonraker.asvc"
 else
   echo "Gab3d-Klipper-Utilities does not exist in ~/printer_data/moonraker.asvc, adding it now"
-  echo "Gab3d-Klipper-Utilities" >> ~/printer_data/moonraker.asvc
+  echo -e "\nGab3d-Klipper-Utilities" >> ~/printer_data/moonraker.asvc
 fi
 
 #check if zip is installed if not install it
