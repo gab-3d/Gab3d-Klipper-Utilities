@@ -43,6 +43,9 @@ type: git_repo
 channel: beta
 primary_branch: main
 path: ~/Gab3d-Klipper-Utilities
+managed_services:
+    - klipper
+    - moonraker
 origin: https://github.com/gab-3d/Gab3d-Klipper-Utilities.git
 install_script: install.sh
     " >> ~/printer_data/config/moonraker.conf
