@@ -35,5 +35,5 @@ fi
 
 
 zip -r ~/printer_data/config/backup/$(hostname)-$backupdate.zip ~/printer_data/moonraker.asvc
-echo -e "your backup is ready in ~/printer_data/config/backup/$(hostname)-$backupdate.zip"
+echo "your backup is ready in ~/printer_data/config/backup/$(hostname)-$backupdate.zip"
 
