@@ -1,4 +1,4 @@
-# Gab3d Klipper Utilities
+# Gab3D Klipper Utilities
 What this does? It adds several macros to:
 - Backup your klipper installation in a zip (relevant files)
 - Create images for Input Shaper and install all requirements
