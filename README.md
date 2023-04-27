@@ -56,7 +56,7 @@ After you start this macro the printer will home if not homed and will start the
 
 Resulsts are stored in the shaper folder inside configuration files for easy download
 
-![Screenshot of fluidd configuration folder](images/shaper.png)
+![Screenshot of fluidd configuration folder](images/Shaper.png)
 
 
 ## PID helper
