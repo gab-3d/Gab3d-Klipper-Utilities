@@ -27,3 +27,4 @@ zip ~/printer_data/config/backup/diagnostic-"$logdate".zip ~/printer_data/config
 #delete *.log in ~/printer_data/config/backup/
 rm ~/printer_data/config/backup/*.log
 
+eco -e "your diagnostics are ready in ~/printer_data/config/backup/diagnostic-$logdate.zip"

@@ -82,5 +82,6 @@ service klipper restart
 #restart moonraker
 service moonraker restart 
 
+echo "finished running Install.sh"
 
   
