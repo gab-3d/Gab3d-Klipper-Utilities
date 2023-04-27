@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#Made by Gab3d
+
 rm ~/printer_data/config/backup/*.log
 
 # save in a file all the rows after the last occurrence of 'Start printer at' in the file ~/printer_data/logs/klippy.log

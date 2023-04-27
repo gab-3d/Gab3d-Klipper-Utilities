@@ -1,7 +1,6 @@
 #!/bin/bash
-# This script is used to backup a user's ~/printer_data/config directory to ~/printer_data/config/backup
-# It also backup can0 configuration
-# It also backup ~/printer_data/gcode directory to ~/printer_data/config/backup
+
+# Made by Gab3d
 
 
 #check if ~/printer_data/config/backup exists if not create it

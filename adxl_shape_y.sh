@@ -1,4 +1,7 @@
 #!/bin/bash
+# Originally made by Insane78 https://github.com/insane78/
+# Modified by Gab3d
+
 #check if ~/printer_data/config/shaper/ exists if not create it
 if [ ! -d ~/printer_data/config/shaper/ ]; then
   echo "shaper directory does not exist, creating it now"

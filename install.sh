@@ -1,4 +1,6 @@
 #!/bin/bash
+# Made by Gab3d
+
 echo "running Install.sh"
 sudo apt update
 
