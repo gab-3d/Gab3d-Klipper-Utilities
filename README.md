@@ -1,5 +1,15 @@
 # Gab3d Klipper Utilities
- 
+What this does? It adds several macros to:
+- Backup your klipper installation in a zip (relevant files)
+- Create images for Input Shaper and install all requirements
+- Create a diagnostic macros
+- Add PID macros
+These are the things that my community ask me the most and struggles configuring it
+
+Hope you like!
+GAB3D
+
+# Installation
 To install it open a shell prompt (ssh or putty)
 
 Use Kiauh to install shell command (if not already installed)
