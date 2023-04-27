@@ -46,7 +46,7 @@ bash ~/Gab3d-Klipper-Utilities/install.sh
 
 It does a backup of
 - ~/printer_data/config -- Excluding zip archives
-- /etc/network/interfaces.d/can0
+- /etc/network/interfaces.d/can0 -- If present
 - ~/printer_data/moonraker.asvc
 - files added to ~/klipper/klippy/extras
 
