@@ -19,7 +19,7 @@ bash ~/Gab3d-Klipper-Utilities/install.sh
 
 After this you will see a new package in the software list and you can keep it updated over time
 
-![update](images/update.png)
+![update](images/Update.png)
 
 You will find the new macros in the macro list
 
