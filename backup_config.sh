@@ -22,13 +22,15 @@ if [ -f /etc/network/interfaces.d/can0 ]; then
   echo "can0 configuration found, adding it to the backup"
   zip -r ~/printer_data/config/backup/$(hostname)-$backupdate.zip /etc/network/interfaces.d/can0
 fi
-
+#assign home directory to a variable
+home=$(echo ~)
 #list untracked git files in ~/klipper/klippy/extras and add them to the backup
 untracked=$(git -C ~/klipper/klippy/extras ls-files --others --exclude-standard)
 if [ -n "$untracked" ]; then
   echo "untracked files found in ~/klipper/klippy/extras, adding them to the backup"
-  #concatenate '~/klipper/klippy/extras/' to the beginning of each line of the variable untracked
-  untracked=$(echo "$untracked" | sed  -e 's/^/\/home\/pi\/klipper\/klippy\/extras\//')
+  #concatenate "$home/klipper/klippy/extras/" to the beginning of each line of the variable untracked using awk
+  untracked=$(echo "$untracked" | awk '{print "'$home'/klipper/klippy/extras/"$0}')
+
   echo "$untracked"
   zip ~/printer_data/config/backup/$(hostname)-$backupdate.zip $untracked
 fi
