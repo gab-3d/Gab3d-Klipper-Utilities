@@ -29,7 +29,8 @@ if [ -n "$untracked" ]; then
   echo "untracked files found in ~/klipper/klippy/extras, adding them to the backup"
   #concatenate '~/klipper/klippy/extras/' to the beginning of each line of the variable untracked
   untracked=$(echo "$untracked" | sed  -e 's/^/~\/klipper\/klippy\/extras\//')
-  zip -r ~/printer_data/config/backup/$(hostname)-$backupdate.zip $untracked
+  echo untracked
+  zip ~/printer_data/config/backup/$(hostname)-$backupdate.zip $untracked
 fi
 
 
