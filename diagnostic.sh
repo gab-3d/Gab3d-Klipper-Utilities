@@ -16,6 +16,7 @@ tail -n $(($(tac ~/printer_data/logs/KlipperScreen.log | grep -m 1 -n 'KlipperSc
 # save in a file all the rows after the last occurrence of 'crowsnest: crowsnest' in the file ~/printer_data/logs/crowsnest.log
 tail -n $(($(tac ~/printer_data/logs/crowsnest.log | grep -m 1 -n 'crowsnest: crowsnest' | cut -d ":" -f 1)-1)) ~/printer_data/logs/crowsnest.log > ~/printer_data/config/backup/$(hostname)-diag_crowsnest.log
 
+ls /dev/serial/by-id/ > ~/printer_data/config/backup/$(hostname)-serial-by-id.log
 
 
 logdate=$(date +%Y%m%d-%H%M)
