@@ -80,9 +80,9 @@ if [ ! -d ~/printer_data/config/backup ]; then
 fi
 
 #restart klipper
-service klipper restart
+sudo service klipper restart
 #restart moonraker
-service moonraker restart 
+sudo service moonraker restart 
 
 echo "finished running Install.sh"
 
