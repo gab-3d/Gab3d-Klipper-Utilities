@@ -21,11 +21,11 @@ ls /dev/serial/by-id/ > ~/printer_data/config/backup/$(hostname)-serial-by-id.lo
 logdate=$(date +%Y%m%d-%H%M)
 
 if [ -f /etc/network/interfaces.d/can0 ]; then
-    zip ~/printer_data/config/backup/diagnostic-"$logdate".zip /etc/network/interfaces.d/can0
+    zip -j ~/printer_data/config/backup/diagnostic-"$logdate".zip /etc/network/interfaces.d/can0
     ~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0 > ~/printer_data/config/backup/$(hostname)-canbus_query.log
 fi
-zip ~/printer_data/config/backup/diagnostic-"$logdate".zip ~/printer_data/config/backup/*.log
-zip ~/printer_data/config/backup/diagnostic-"$logdate".zip ~/printer_data/config/*.conf
+zip -j ~/printer_data/config/backup/diagnostic-"$logdate".zip ~/printer_data/config/backup/*.log
+zip -j ~/printer_data/config/backup/diagnostic-"$logdate".zip ~/printer_data/config/*.conf
 
 
 

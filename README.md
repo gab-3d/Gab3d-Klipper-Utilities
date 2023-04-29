@@ -1,5 +1,15 @@
-# Gab3d Klipper Utilities
- 
+# Gab3D Klipper Utilities
+What this does? It adds several macros to:
+- Backup your klipper installation in a zip (relevant files)
+- Create images for Input Shaper and install all requirements
+- Create a diagnostic macros
+- Add PID macros
+These are the things that my community ask me the most and struggles configuring it
+
+Hope you like!
+GAB3D
+
+# Installation
 To install it open a shell prompt (ssh or putty)
 
 Use Kiauh to install shell command (if not already installed)
@@ -36,7 +46,7 @@ bash ~/Gab3d-Klipper-Utilities/install.sh
 
 It does a backup of
 - ~/printer_data/config -- Excluding zip archives
-- /etc/network/interfaces.d/can0
+- /etc/network/interfaces.d/can0 -- If present
 - ~/printer_data/moonraker.asvc
 - files added to ~/klipper/klippy/extras
 
