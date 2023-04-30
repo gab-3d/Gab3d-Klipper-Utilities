@@ -17,6 +17,10 @@ tail -n $(($(tac ~/printer_data/logs/KlipperScreen.log | grep -m 1 -n 'KlipperSc
 tail -n $(($(tac ~/printer_data/logs/crowsnest.log | grep -m 1 -n 'crowsnest: crowsnest' | cut -d ":" -f 1)-1)) ~/printer_data/logs/crowsnest.log > ~/printer_data/config/backup/$(hostname)-diag_crowsnest.log
 
 ls /dev/serial/by-id/ > ~/printer_data/config/backup/$(hostname)-serial-by-id.log
+lsusb > ~/printer_data/config/backup/$(hostname)-lsusb.log
+lsusb -t > ~/printer_data/config/backup/$(hostname)-lsusb-t.log
+
+
 
 
 logdate=$(date +%Y%m%d-%H%M)
