@@ -20,6 +20,9 @@ ls /dev/serial/by-id/ > ~/printer_data/config/backup/$(hostname)-serial-by-id.lo
 lsusb > ~/printer_data/config/backup/$(hostname)-lsusb.log
 lsusb -t > ~/printer_data/config/backup/$(hostname)-lsusb-t.log
 
+lsb_release -a > ~/printer_data/config/backup/$(hostname)-lsb_release.log
+uname -a > ~/printer_data/config/backup/$(hostname)-uname.log
+cat /etc/os-release > ~/printer_data/config/backup/$(hostname)-os-release.log
 
 
 
