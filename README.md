@@ -12,7 +12,7 @@ GAB3D
 # Installation
 To install it open a shell prompt (ssh or putty)
 
-Use Kiauh to install shell command (if not already installed)
+Use [Kiauh](https://github.com/th33xitus/kiauh) to install shell command (if not already installed)
 
 - option 4 (Advanced)
 - option 8 (G-Code Shell Command)
