@@ -90,6 +90,10 @@ It collects:
     - crowsnest log from last restart
 
 Add everything in a singke zip file
+## Clean Temp Files
+- Runs apt clean to save space in SD
+- Delete all telegram bot temporary files
+
 
 ## Hidden macro _UPDATE_GAB_UTIL
 The macro _UPDATE_GAB_UTIL run the installation script again
